@@ -1,4 +1,4 @@
-var Animal = function(s, f, n) {        
+var Animal = function(s, f, n) {
   this.speed = s;
   this.focus = f;
   this.name = n;
@@ -12,24 +12,24 @@ var Animal = function(s, f, n) {
     }
   };
 }  
-
+ 
  var turtle = new Animal (1, 8, "Tommy"),
       rabbit = new Animal (1.5, 2, "Ronald"),
       fox = new Animal (2.5, 3, "Farrah"),
       goat = new Animal (2,7, "Gale");
-
-
-
-
+ 
+ 
+ 
+ 
 var distance = 500;
-
-while(turtle.position < distance && rabbit.position < distance && fox.position < distance && goat.position < distance) {//* this is going to keep going while one of them is not at the finish line yet, those bars mean "or" *//
+ 
+while(turtle.position < distance && rabbit.position < distance && fox.position < distance && goat.position < distance) {
   turtle.run(); //*set up above*//
   rabbit.run();
   fox.run();
   goat.run();
 };
-
+ 
 console.log(turtle.report());
 console.log(rabbit.report());
 console.log(fox.report());
