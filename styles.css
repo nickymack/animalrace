@@ -7,32 +7,40 @@ body  {
 
 p {font-family: Arial;
     font-size: 1em;
-    color:#2a415f;
-}
+    color:#2a415f;}
+
 div.wrapper {width:relative;
     margin:0px auto;}
+
 h1 {text-align:center;
     font-family: Arial;
     font-size: 3em;}
     
-ul{padding: 10px;
+.topBanner {padding: 10px;
   background: #FCFBE3;
-    opacity: 0.7}
+    opacity: 0.7;}
     
 section {text-align: center;}
     
 li {display: inline-block; 
     margin-left: auto; 
     margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
     text-align: center; 
     padding: 10px 10px 10px 10px;}
-    
+
 .animalPortraits {height: 200px; 
     width: 200px; 
     border-radius: 100%;
     border-style: solid;
     border-color: #A8A8A8;
     border-width: 6 px;}
+
+.animalButton {border-radius: 100%}
+
+.levels {display:none;
+    width: 200px;}
     
 figcaption {font-size: 2em;
     font-family: Arial;
@@ -81,3 +89,11 @@ article.gallery {background:#d39953;
     margin-left:auto;
     margin-right:auto;
     text-align:center;}
+
+#resultsButton {height: 40opx; 
+    width:400px;
+    border-bottom-color:#853c41;
+    font-family:Arial;
+    font-size:2em;
+    border-width: 20px;
+    margin-bottom: 200px;}

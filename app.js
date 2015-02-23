@@ -1,3 +1,4 @@
+
 var Animal = function(s, f, n) {
   this.speed = s;
   this.focus = f;
@@ -18,9 +19,6 @@ var Animal = function(s, f, n) {
       fox = new Animal (2.5, 3, "Farrah"),
       goat = new Animal (2,7, "Gale");
  
- 
- 
- 
 var distance = 500;
  
 while(turtle.position < distance && rabbit.position < distance && fox.position < distance && goat.position < distance) {
@@ -34,3 +32,18 @@ console.log(turtle.report());
 console.log(rabbit.report());
 console.log(fox.report());
 console.log(goat.report());
+
+$(document).ready(function() {
+    console.log( "ready!" );
+    $(".animalBasics").on("click",".animalButton", function() {
+        $(this).closest(".animalBasics").find(".levels").slideToggle();
+        });
+    $("#resultsButton").on("click", function() {
+        var results = $("<p>Message to show who won which is probably a function</p>");
+        $("#resultsSection").append(results);
+        $("#resultsButton").remove();
+        
+        
+    });
+});
+
