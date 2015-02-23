@@ -5,7 +5,7 @@ var Animal = function(s, f, n) {
   this.name = n;
   this.position = 0;
   this.report = function() {
-    return this.name + " is it " + this.position;
+    return this.name + " is at " + this.position;
   };
   this.run = function(){
     if(this.focus < (Math.random() *10)) { //*assigning a random number between 1 and 10 for to measure their focus against, like are they more focused than this?*//
@@ -33,17 +33,29 @@ console.log(rabbit.report());
 console.log(fox.report());
 console.log(goat.report());
 
+var winner;
+if (turtle.position >= 500)
+{ winner = turtle}
+else if(rabbit.position >= 500)
+{winner = rabbit}
+else if(fox.position >= 500)
+{winner = fox}
+else if(goat.position >= 500)
+{winner = goat};
+
+
 $(document).ready(function() {
-    console.log( "ready!" );
+    
     $(".animalBasics").on("click",".animalButton", function() {
         $(this).closest(".animalBasics").find(".levels").slideToggle();
         });
+    
     $("#resultsButton").on("click", function() {
-        var results = $("<p>Message to show who won which is probably a function</p>");
+        var results = $("<h1>" + winner.name + " is the winner!</h1>");
+        console.log(winner.report());
         $("#resultsSection").append(results);
         $("#resultsButton").remove();
-        
-        
     });
+    
 });
 

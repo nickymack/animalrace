@@ -9,6 +9,9 @@ p {font-family: Arial;
     font-size: 1em;
     color:#2a415f;}
 
+h1{font-family:Arial;
+    font-color:#2a415f;
+    background-color:yellow;}
 div.wrapper {width:relative;
     margin:0px auto;}
 
