@@ -1,2 +1,3 @@
-# animalrace
-the animal race for foundations one
+# Animal Race
+by Nicky Mack
+Code Fellows Foundations I
