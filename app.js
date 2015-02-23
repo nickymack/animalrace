@@ -8,7 +8,7 @@ var Animal = function(s, f, n) {
     return this.name + " is at " + this.position;
   };
   this.run = function(){
-    if(this.focus < (Math.random() *10)) { //*assigning a random number between 1 and 10 for to measure their focus against, like are they more focused than this?*//
+    if(this.focus >= (Math.random() *10)) { //*assigning a random number between 1 and 10 for to measure their focus against, like are they more focused than this?*//
       this.position += this.speed; //*go from their position at their speed, or add their speed*//
     }
   };
@@ -17,7 +17,7 @@ var Animal = function(s, f, n) {
  var turtle = new Animal (1, 8, "Tommy"),
       rabbit = new Animal (1.5, 2, "Ronald"),
       fox = new Animal (2.5, 3, "Farrah"),
-      goat = new Animal (2,7, "Gale");
+      goat = new Animal (2,5, "Gale");
  
 var distance = 500;
  
